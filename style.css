@@ -1,0 +1,53 @@
+/* -----Body-Section------- */
+body{
+    background-color: rgb(114, 224, 187);
+}
+
+/* ------ Allg.Styling Feature-Sektion----- */
+.features-section {
+  padding: 40px 20px;
+  background-color: #075151; /* Heller Hintergrund zur Abhebung */
+}
+
+.features-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ------Layout für die Karten----- */
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* Damit es auch auf kleinen Bildschirmen gut aussieht */
+}
+
+/* ----- Styling einzelne Karte ----- */
+.card {
+  background-color: rgb(191, 226, 34);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(52, 31, 31, 0.1);
+  text-align: center;
+  width: 250px; /* Feste Breite für gleichmäßige Karten */
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Schwebender Effekt beim Hover */
+  box-shadow: 0 8px 16px rgba(203, 211, 199, 0.2);
+}
+
+/* ------ Icon-Größe anpassen ----- */
+.card h3:first-child {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* ------- Responsive Anpassung für Mobile ------ */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
